@@ -75,5 +75,5 @@ for (i in 2:ncol(original)) {
 updated <- original
 colnames(updated) <- new_colnames
 
-write_csv(updated, "covid_updated.csv")
+write_csv(updated, "covid_updated.csv", na = "")
 system("dx upload covid_updated.csv --path APOE/")
